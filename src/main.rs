@@ -1,5 +1,5 @@
-fn  hello__world() -> &'static str {
-    "Hello, wirld!"
+fn hello__world() -> &'static str {
+    "Hello, world!"
 }
 
 fn main() {
