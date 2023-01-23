@@ -1,9 +1,13 @@
-fn  hello__world() -> &'static str {
-    "Hello, wirld!"
+pub struct Hello;
+
+impl Hello {
+    fn  hello__world() -> &'static str {
+        "Hello, wirld!"
+    }
 }
 
 fn main() {
-    println!("{}", hello__world());
+    println!("{}", Hello::hello__world());
 }
 
 #[cfg(test)]
@@ -12,6 +16,6 @@ mod tests {
 
     #[test]
     fn hello_world() {
-        assert_eq!("Hello, world!", hello__world());
+        assert_eq!("Hello, world!", Hello::hello__world());
     }
 }
