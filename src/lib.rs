@@ -1,3 +1,5 @@
+#![warn(clippy::pedantic)]
+
 pub struct Hello;
 
 /// The [Helo] project is a simple hello world program. It comes with two methods:
