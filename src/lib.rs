@@ -11,16 +11,16 @@ pub struct Hello;
 /// use worlds_simplest_kata::Hello;
 ///
 /// let hello = Hello::hello("everyone".to_string());
-/// assert_eq!("Hello, everyone.", hello);
+/// assert_eq!("Hello, everyone!", hello);
 ///
 /// ```
 impl Hello {
     pub fn hello(name: String) -> String {
-        format!("Hello,  {}!", name)
+        format!("Hello, {}!", name)
     }
 
-    pub fn  hello__world() -> &'static str {
-        Hello::hello("wirld!".to_string())
+    pub fn  hello__world() -> String {
+        Hello::hello("world".to_string())
     }
 }
 
