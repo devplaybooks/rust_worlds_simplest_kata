@@ -19,7 +19,7 @@ impl Hello {
         format!("Hello, {}!", name)
     }
 
-    pub fn  hello_world() -> String {
+    pub fn hello_world() -> String {
         Hello::hello("world".to_string())
     }
 }
