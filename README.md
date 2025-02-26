@@ -5,18 +5,22 @@
 
 # The World's Simplest Kata: Rust Edition
 
-Welcome to the world's simplest kata! The task is simple. The build is failing.
-The code has one function, and a simple main method.
+Welcome to the world's simplest kata! The task is simple. The code creates a simple greeting, but the build is failing.
 Make the red Actions in GitHub green. Easy peasy, lemon squeezy.
 
-For the Rust edition, there are four types of errors: [unit test](https://doc.rust-lang.org/cargo/commands/cargo-test.html),
-[formatting](https://github.com/rust-lang/rustfmt), [linting](https://github.com/rust-lang/rust-clippy), and [doc linting](https://doc.rust-lang.org/rustdoc/lints.html).
+For the Rust edition, there are four types of errors: 
+
+- [unit test](https://doc.rust-lang.org/cargo/commands/cargo-test.html)
+- [formatting](https://github.com/rust-lang/rustfmt)
+- [linting](https://github.com/rust-lang/rust-clippy)
+- [doc linting](https://doc.rust-lang.org/rustdoc/lints.html).
 
 There are several goals for this kata:
 
 * Demonstrate to yourself that you have the Rust tools installed correctly.
 * Make sure that you have a GitHub account setup and can fork a repo.
-* Are able to fix the three most common kind of errors that will be picked up on a Rust CI build: unit test, [clippy](https://github.com/rust-lang/rust-clippy), and [formatting](https://github.com/rust-lang/rustfmt).
+* Show that you are able to fix common errors that will be picked up on a Rust CI build.
+* Show how the Rust toolchain helps you to troubleshoot those errors.
 
 ## How To
 
@@ -24,5 +28,3 @@ There are several goals for this kata:
 * Make it green.
 * ...
 * Profit!
-
-
