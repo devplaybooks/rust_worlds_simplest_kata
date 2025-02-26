@@ -17,7 +17,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        rust: [beta, stable, 1.56.0]
+        rust: [beta, stable, 1.72.1]
         include:
           - rust: nightly
             rustflags: --cfg thiserror_nightly_testing
@@ -39,8 +39,9 @@ jobs:
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
-      - uses: dtolnay/rust-toolchain@nightly
+      - uses: dtolnay/rust-toolchain@master
         with:
+          toolchain: stable
           components: clippy, rust-src
       - run: cargo clippy -- -Dclippy::all -Dclippy::pedantic
 
@@ -51,7 +52,22 @@ jobs:
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
-      - uses: dtolnay/rust-toolchain@nightly
+      - uses: dtolnay/rust-toolchain@master
         with:
+          toolchain: stable
           components: rustfmt, rust-src
       - run: cargo fmt --all -- --check
+
+  doc:
+    name: Doc
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: stable
+          components: rust-docs, rust-src
+      - run: cargo doc --no-deps --document-private-items
+        env:
+          RUSTDOCFLAGS: "-D warnings"
