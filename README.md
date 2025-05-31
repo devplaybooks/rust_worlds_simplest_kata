@@ -2,7 +2,7 @@
 
 ---
 
-# The World's Simplest Kata: Rust Edition
+# The World's Simplest Kata: Rust Edition boop
 
 Welcome to the world's simplest kata! The task is simple. The code creates a simple greeting, but the build is failing.
 Make the red Actions in GitHub green. Easy peasy, lemon squeezy.
