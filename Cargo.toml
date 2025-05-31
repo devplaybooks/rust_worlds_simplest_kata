@@ -1,7 +1,13 @@
 [package]
 name = "worlds_simplest_kata"
-version = "0.1.1"
-edition = "2021"
+version = "0.1.2"
+authors = ["electronicpanopticon <gaoler@electronicpanopticon.com>"]
+edition = "2024"
+rust-version = "1.72.1"
+description = "A kata to learn how to fix basic issues with rust code."
+repository = "https://github.com/devplaybooks/rust_worlds_simplest_kata"
+license = "GPL-3"
+keywords = ["rust", "kata", "linting", "xUnit", "CI-CD"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
