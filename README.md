@@ -7,8 +7,9 @@
 Welcome to the world's simplest kata! The task is simple. The code creates a simple greeting, but the build is failing.
 Make the red Actions in GitHub green. Easy peasy, lemon squeezy.
 
-For the Rust edition, there are four types of errors: 
+For the Rust edition, there are five types of errors: 
 
+- [compiling](https://doc.rust-lang.org/book/ch01-02-hello-world.html)
 - [unit test](https://doc.rust-lang.org/cargo/commands/cargo-test.html)
 - [formatting](https://github.com/rust-lang/rustfmt)
 - [linting](https://github.com/rust-lang/rust-clippy)
