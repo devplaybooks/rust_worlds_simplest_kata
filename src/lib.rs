@@ -20,7 +20,7 @@ impl Hello {
     }
 
     pub fn hello_world() -> &'static str {
-        Hello::hello("wirld!".to_string())
+       "Hello, world!"
     }
 }
 
