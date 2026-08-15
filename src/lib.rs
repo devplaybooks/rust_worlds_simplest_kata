@@ -19,7 +19,7 @@ impl Hello {
         format!("Hello,  {}!", name)
     }
 
-    pub fn  hello__world() -> &'static str {
+    pub fn hello_world() -> &'static str {
         Hello::hello("wirld!".to_string())
     }
 }
@@ -30,6 +30,6 @@ mod tests {
 
     #[test]
     fn hello_world() {
-        assert_eq!("Hello, world!", Hello::hello__world());
+        assert_eq!("Hello, world!", Hello::hello_world());
     }
 }
